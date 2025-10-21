@@ -9,14 +9,14 @@
 </head>
 <body>
     <header class="navbar">
-        <img src="images/images.jpg" alt="MyGaanaApp Logo" width="60" height="60" style="margin-left:10px;">
+        <img src="images/images.jpg" alt="MyGaanaApp Logo" width="60" height="60" class="logo">
         <h1 class="app-name">MyGaanaApp</h1>
-        <div class="buttons" style="margin-right: 20px;">
-            <button class="btn btn-black">Sign up</button>
-            <button class="btn btn-white">Log in</button>
+        <div class="buttons">
+            <button class="btn btn-black">Sign Up</button>
+            <button class="btn btn-white">Log In</button>
         </div>
     </header>
-    
+
     <main class="container">
         <aside class="left-section">
             <h2 class="heading">Library</h2>
@@ -31,9 +31,16 @@
                     <span id="cur-song-name">Jhoome Jo Pathaan</span>
                     <span id="cur-song-dur">00:00 / 3:28</span>
                 </div>
-                
-                <input type="range" id="seekbar" min="1" max="100" value="0" aria-label="Seek bar">
-                
+
+                <input 
+                    type="range" 
+                    id="seekbar" 
+                    min="1" 
+                    max="100" 
+                    value="0" 
+                    aria-label="Seek bar"
+                >
+
                 <div class="play-btns">
                     <button id="prev-btn" aria-label="Previous song">
                         <i class="fa-solid fa-backward-step"></i>
@@ -48,7 +55,7 @@
             </div>
         </section>
     </main>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
