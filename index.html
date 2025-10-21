@@ -8,36 +8,54 @@
     <script src="https://kit.fontawesome.com/70f0735629.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="navbar">
-        <img src="images/images.jpg" alt="logo" width="60" height="60" style="margin-left:10px"/>
-        <div class="app-name">MyGaanaApp</div>
-        <div class="buttons" style="margin-right: 20px;">
-            <div style="display: inline-block;" class="btn btn-black">Sign up</div>
-            <div style="display: inline-block;" class="btn btn-white">Log in</div>
+    <header class="navbar">
+        <img src="images/images.jpg" alt="MyGaanaApp Logo" width="60" height="60" class="logo">
+        <h1 class="app-name">MyGaanaApp</h1>
+        <div class="buttons">
+            <button class="btn btn-black">Sign Up</button>
+            <button class="btn btn-white">Log In</button>
         </div>
-    </div>
-    
-    <div class="container">
-        <div class="left-section">
+    </header>
+
+    <main class="container">
+        <aside class="left-section">
             <h2 class="heading">Library</h2>
             <div class="song-list">
+                <!-- Songs will be dynamically added here -->
             </div>
-        </div>
-        <div class="play-section">
+        </aside>
+
+        <section class="play-section">
             <div class="play-btns-section">
                 <div class="song-data">
                     <span id="cur-song-name">Jhoome Jo Pathaan</span>
-                    <span id="cur-song-dur">00:00/3:28</span>
+                    <span id="cur-song-dur">00:00 / 3:28</span>
                 </div>
-                <input type="range" name="" id="seekbar" min="1" max ="100" value="0"/>
+
+                <input 
+                    type="range" 
+                    id="seekbar" 
+                    min="1" 
+                    max="100" 
+                    value="0" 
+                    aria-label="Seek bar"
+                >
+
                 <div class="play-btns">
-                    <span id="prev-btn"><i class="fa-solid fa-backward-step"></i></i></span>
-                    <span id="play-btn"><i class="fa-solid fa-play"></i></span>
-                    <span id="next-btn"><i class="fa-solid fa-forward-step"></i></i></span>
+                    <button id="prev-btn" aria-label="Previous song">
+                        <i class="fa-solid fa-backward-step"></i>
+                    </button>
+                    <button id="play-btn" aria-label="Play or pause">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <button id="next-btn" aria-label="Next song">
+                        <i class="fa-solid fa-forward-step"></i>
+                    </button>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
